@@ -10,7 +10,6 @@ Decentralized Autonomous Organizations
   - [Quickstart](#quickstart)
 - [Usage](#usage)
   - [Test](#test)
-  - [Deploy](#deploy)
   - [Estimate gas](#estimate-gas)
 - [Formatting](#formatting)
 - [Socials](#socials)
@@ -39,9 +38,6 @@ forge build
 ```
 forge test
 ```
-## Deploy
-
-I did not write deploy scripts for this project, you can if you'd like!
 
 ## Estimate gas
 
