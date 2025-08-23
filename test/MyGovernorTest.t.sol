@@ -6,29 +6,28 @@ import {Test, console} from "forge-std/Test.sol";
 import {MyGovernor} from "src/MyGovernor.sol";
 import {Box} from "src/Box.sol";
 import {GovToken} from "src/GovToken.sol";
-import {TimeLock} from "src/TimeLock.sol"; 
+import {TimeLock} from "src/TimeLock.sol";
 
-
-contract MyGovernorTest is Test{
+contract MyGovernorTest is Test {
     MyGovernor governor;
     Box box;
     GovToken govToken;
     TimeLock timelock;
-    
+
     address public USER = makeAddr("user");
     uint256 constant INITIAL_SUPPLY = 100 ether;
     uint256 constant VOTING_DELAY = 7200;
-    uint256 constant VOTING_PERIOD = 50400; 
+    uint256 constant VOTING_PERIOD = 50400;
 
     address[] proposers;
     address[] executors;
     uint256[] values;
     bytes[] calldatas;
     address[] targets;
- 
+
     uint256 public constant MIN_DELAY = 3600;
 
-    function setUp() public{
+    function setUp() public {
         govToken = new GovToken();
         govToken.mint(USER, INITIAL_SUPPLY);
 
@@ -55,7 +54,7 @@ contract MyGovernorTest is Test{
         box.store(1);
     }
 
-    function testGovernanceUpdatesBox() public{
+    function testGovernanceUpdatesBox() public {
         uint256 valueToStore = 888;
         string memory description = "store 1 in Box";
         bytes memory encodedFunctionCall = abi.encodeWithSignature("store(uint256)", valueToStore);
