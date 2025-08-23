@@ -1,66 +1,66 @@
-## Foundry
+# Governance and DAOs
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Decentralized Autonomous Organizations
 
-Foundry consists of:
+# Table Content
+- [Governance and DAOs](#governance-and-daos)
+- [Table Content](#table-content)
+- [Introduction](#introduction)
+- [About](#about)
+  - [Quickstart](#quickstart)
+- [Usage](#usage)
+  - [Test](#test)
+  - [Deploy](#deploy)
+  - [Estimate gas](#estimate-gas)
+- [Formatting](#formatting)
+- [Socials](#socials)
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+# Introduction
 
-## Documentation
+DAOs(Decentralized Autonomous Organizations) are blockchain based entities that operates without central authority.
 
-https://book.getfoundry.sh/
+# About
 
-## Usage
+In this repo, I demonstrated the core functions of DAO and implemented governance in such a way that allows the users make quick decisions by using the timelock concept. This concept gives users time to reflect on a proposal before it is executed.
 
-### Build
+## Quickstart
 
-```shell
-$ forge build
+```
+git clone https://github.com/Cyfrin/foundry-dao-cu
+cd foundry-dao-cu
+forge install
+forge build
 ```
 
-### Test
+# Usage
 
-```shell
-$ forge test
+## Test
+
+```
+forge test
+```
+## Deploy
+
+I did not write deploy scripts for this project, you can if you'd like!
+
+## Estimate gas
+
+You can estimate how much gas things cost by running:
+
+```
+forge snapshot
 ```
 
-### Format
+And you'll see and output file called `.gas-snapshot`
 
-```shell
-$ forge fmt
+
+# Formatting
+
+
+To run code formatting:
+```
+forge fmt
 ```
 
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+# Socials
+Follow me on X ![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/mibunna)
