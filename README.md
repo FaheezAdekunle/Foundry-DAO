@@ -2,9 +2,9 @@
 
 Decentralized Autonomous Organizations
 
-# Table Content
+# Table of Content
 - [Governance and DAOs](#governance-and-daos)
-- [Table Content](#table-content)
+- [Table of Content](#table-of-content)
 - [Introduction](#introduction)
 - [About](#about)
   - [Quickstart](#quickstart)
